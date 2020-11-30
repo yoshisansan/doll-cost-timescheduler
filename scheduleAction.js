@@ -3,7 +3,7 @@ const cron = require('node-cron')
 const { getLatestPrice } = require('./schedulePuppeteer');
 const { actionSpreadSheet } = require('./SpreadSheet/index');
 // const SET_TIMER = '*/50 * * * * *'; ////50秒毎
-const SET_TIMER = '0 30 18 30 * *'; //毎月30日17時59分
+const SET_TIMER = '0 45 18 30 * *'; //毎月30日17時59分
 // const SET_TIMER = '0 1 18 30 * *'; ////毎月1日の0時1分0秒に実行
 
 exports.scheduler = async() => {

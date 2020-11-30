@@ -10,6 +10,9 @@
   "scripts": {
     "start": "nodemon scheduleServer.js"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "devDependencies": {
     "nodemon": "^2.0.6"
   }
