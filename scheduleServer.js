@@ -12,7 +12,7 @@ app.use(myLogger);
 
 app.get('/start-server', (req, res) => {
   (async() => {
-    await scheduler();
+    // await scheduler();
     res.send('start shceduleAction!!');
     return;
   })().catch(console.log("done"))
@@ -25,6 +25,9 @@ app.get('*', (req, res) => {
 })
 
 app.listen(app.get("port"), ()=>{
+  (async() => {
+    await scheduler();
+  })();
   console.log(`Server リスナ:
   ${app.get("port")}監視中`);
 })
